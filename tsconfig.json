@@ -1,0 +1,17 @@
+{
+	"compilerOptions": {
+		"declaration": false,
+		"emitDecoratorMetadata": false,
+		"experimentalDecorators": true,
+		"module": "commonjs",
+		"moduleResolution": "node",
+		"noFallthroughCasesInSwitch": false,
+		"noImplicitAny": true,
+		"noImplicitReturns": true,
+		"removeComments": true,
+		"sourceMap": true,
+		"strictNullChecks": false,
+		"target": "es5",
+		"allowJs": true
+	}
+}
