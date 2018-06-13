@@ -29,7 +29,7 @@
 	"homepage": "https://github.com/neilrackett/conbo-example-routenavigator#readme",
 	"dependencies": {
 		"conbo": "^4.3.9",
-		"conbo-routenavigator": "^0.0.3"
+		"conbo-routenavigator": "0.0.3"
 	},
 	"devDependencies": {
 		"copy-webpack-plugin": "^4.1.1",
