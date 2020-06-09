@@ -7,11 +7,6 @@ module.exports = env =>
 {
 	env || (env = {});
 
-	const DEBUG = !!env.DEBUG || isDevServer;
-
-	let plugins = [new CopyWebpackPlugin([{from:'./src/index.html'}])];
-	if (!DEBUG) plugins.unshift(new webpack.optimize.UglifyJsPlugin({compress:{warnings:false}}));
-
 	return {
 
 		entry: './src/app/RouteNavigatorExample.ts',
@@ -30,7 +25,7 @@ module.exports = env =>
 
 		module: 
 		{
-			loaders: 
+			rules: 
 			[
 				{
 					test: /\.tsx?$/, 
@@ -43,7 +38,16 @@ module.exports = env =>
 			]
 		},
 
-		plugins,
+		plugins:
+		[
+			new CopyWebpackPlugin
+			({
+				patterns:
+				[
+					'./src/index.html'
+				]
+			})
+		],
 
 		devServer: 
 		{

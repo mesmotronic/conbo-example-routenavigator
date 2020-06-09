@@ -1,12 +1,11 @@
 {
 	"name": "conbo-example-routenavigator",
-	"version": "1.1.0",
+	"version": "1.1.1",
 	"description": "Usage example for the conbo-routenavigator library for ConboJS",
 	"main": "./dist/index.html",
 	"scripts": {
 		"build": "webpack",
-		"serve": "webpack-dev-server",
-		"postinstall": "npm link typescript"
+		"serve": "webpack-dev-server"
 	},
 	"repository": {
 		"type": "git",
@@ -24,22 +23,24 @@
 	"author": "Neil Rackett",
 	"license": "MIT",
 	"bugs": {
-		"url": "https://github.com/neilrackett/conbo-example-routenavigator/issues"
+		"url": "https://github.com/conbojs/conbo-example-routenavigator/issues"
 	},
-	"homepage": "https://github.com/neilrackett/conbo-example-routenavigator#readme",
+	"homepage": "https://github.com/conbojs/conbo-example-routenavigator#readme",
 	"dependencies": {
-		"conbo": "^4.3.9",
-		"conbo-routenavigator": "0.0.3"
+		"conbo": "^4.3.27",
+		"conbo-routenavigator": "0.0.4"
 	},
 	"devDependencies": {
-		"copy-webpack-plugin": "^4.1.1",
-		"css-loader": "^0.28.7",
-		"node-sass": "^4.5.3",
+		"copy-webpack-plugin": "^6.0.2",
+		"css-loader": "^3.5.3",
+		"node-sass": "^4.14.1",
 		"path": "^0.12.7",
-		"sass-loader": "^6.0.6",
-		"style-loader": "^0.19.0",
-		"ts-loader": "^3.2.0",
-		"webpack": "^3.11.0",
-		"webpack-dev-server": "^2.11.1"
+		"sass-loader": "^8.0.2",
+		"style-loader": "^1.2.1",
+		"ts-loader": "^7.0.5",
+		"typescript": "^3.9.5",
+		"webpack": "^4.43.0",
+		"webpack-cli": "^3.3.11",
+		"webpack-dev-server": "^3.11.0"
 	}
 }
