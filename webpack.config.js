@@ -44,7 +44,7 @@ module.exports = env =>
 			({
 				patterns:
 				[
-					'./src/index.html'
+					'./static'
 				]
 			})
 		],
