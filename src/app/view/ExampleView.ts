@@ -2,17 +2,16 @@ import { View, Bindable, Viewable } from 'conbo';
 
 let counter:number = 0;
 
-@Viewable('conbo.example.routenavigator', 'ExampleView')
+@Viewable('ExampleView')
 export default class ExampleView extends View
 {
 	@Bindable public name:string;
 
 	protected declarations(options:any):void
 	{
-		this.className = 'example-view';
 		this.name = options.name || counter.toString();
 
-		this.template =
+		this.template = /* html */
 		`
 			<h1>{{name}}</h1>
 			<p>This view will automatically get updated each time the router detects a change to the current path.</p>
@@ -23,6 +22,6 @@ export default class ExampleView extends View
 
 	protected next():void
 	{
-		location.href = `#!/${++counter}`;
+		location.href = `#/${++counter}`;
 	}
 }

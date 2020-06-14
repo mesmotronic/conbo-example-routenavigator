@@ -9,13 +9,13 @@ module.exports = env =>
 
 	return {
 
-		entry: './src/app/RouteNavigatorExample.ts',
+		entry: './src/index.ts',
 		devtool: 'source-map',
 
 		output: 
 		{
 			path: path.resolve(__dirname, 'dist'),
-			filename: 'example.js'
+			filename: 'app.js'
 		},
 
 		resolve: 

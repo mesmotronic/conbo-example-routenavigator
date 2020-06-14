@@ -1,7 +1,8 @@
 import RouteNavigator from 'conbo-routenavigator';
 import ExampleView from './ExampleView';
-import { ConboEvent } from 'conbo';
+import { ConboEvent, Viewable } from 'conbo';
 
+@Viewable('ExampleRouteNavigator')
 export default class ExampleRouteNavigator extends RouteNavigator
 {
 	protected declarations():void
@@ -17,11 +18,10 @@ export default class ExampleRouteNavigator extends RouteNavigator
 
 	protected initialize():void
 	{
-		location.href = '#!/Welcome!';
-		this.addEventListener(ConboEvent.CREATION_COMPLETE, this.creationCompleteHandler, this);
+		location.href = '#/Welcome!';
 	}
 
-	protected creationCompleteHandler(event:ConboEvent):void
+	protected creationComplete():void
 	{
 		this.router
 			.addEventListener(ConboEvent.FAULT, this.faultHandler, this)
