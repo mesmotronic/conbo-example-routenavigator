@@ -1,6 +1,6 @@
 {
 	"name": "conbo-example-routenavigator",
-	"version": "1.1.1",
+	"version": "1.1.2",
 	"description": "Usage example for the conbo-routenavigator library for ConboJS",
 	"main": "./dist/index.html",
 	"scripts": {
@@ -27,12 +27,12 @@
 	},
 	"homepage": "https://github.com/conbojs/conbo-example-routenavigator#readme",
 	"dependencies": {
-		"conbo": "^4.3.27",
-		"conbo-routenavigator": "0.0.4"
+		"conbo": "^4.3.29",
+		"conbo-routenavigator": "^0.1.1"
 	},
 	"devDependencies": {
 		"copy-webpack-plugin": "^6.0.2",
-		"css-loader": "^3.5.3",
+		"css-loader": "^3.6.0",
 		"node-sass": "^4.14.1",
 		"path": "^0.12.7",
 		"sass-loader": "^8.0.2",

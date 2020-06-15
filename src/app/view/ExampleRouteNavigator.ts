@@ -10,9 +10,10 @@ export default class ExampleRouteNavigator extends RouteNavigator
 		this.firstView = ExampleView;
 		this.firstViewOptions = {name:'Welcome!'};
 
+		// Routes listed in the format name:ViewClass
 		this.routes =
 		{
-			'/:name': 'ExampleView'
+			'/:name': ExampleView
 		};
 	}
 
@@ -24,7 +25,7 @@ export default class ExampleRouteNavigator extends RouteNavigator
 	protected creationComplete():void
 	{
 		this.router
-			.addEventListener(ConboEvent.FAULT, this.faultHandler, this)
+			.addEventListener(ConboEvent.FAULT, this.faultHandler, {scope:this})
 			.start({trigger:false})
 			;
 	}
